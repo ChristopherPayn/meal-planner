@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+body {
+  width: 80vw;
+  margin: 1em auto 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Meal */
+.meal {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0.2em;
+  padding: 0.2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.meal__name {
+  width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.meal__quantity {
+  margin: auto 0;
+}
+
+/* Meal List */
+.meal-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.2em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Day */
+.day {
+  border: 1px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meal-times {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Meal Time */
+.meal-time {
+  border: 1px dotted blue;
+  height: 8em;
+  /* max-width: 30vw; */
+  overflow: hidden;
+}
+
+.meal-time select {
+  width: 100%;
 }
